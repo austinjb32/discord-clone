@@ -1,4 +1,7 @@
 import { DirectMsgBar } from "./Components/DirectMsgBar/DirectMsgBar";
+import MainScreen from "./Components/MainScreen/MainScreen";
+import MainScreenBar from "./Components/MainScreenBar/MainScreenBar";
+import MainScreenSideBar from "./Components/MainScreenBar/MainScreenSideBar";
 import { NavigationBar } from "./Components/NavigationBar/NavigationBar";
 import DiscordHeaderImage from "./assets/navigation-icons/Discord_ Heading.svg";
 import "./index.css"
@@ -11,18 +14,19 @@ function App() {
       <img src={DiscordHeaderImage}></img>
         </div>
     </div>
-    <div className="flex flex-row">
+    <div className="flex flex-row h-full">
     <NavigationBar />
     <DirectMsgBar />
-    <div className="w-screen p-4 text-white bg-[#36393F]">
-
-      <h1 className="text-2xl">Discord with React!</h1>
-
-      <button className="px-4 py-2 mt-4 font-bold text-white bg-green-500 rounded hover:bg-green-700">
-
-        Click Me
-
-      </button>
+    <div className="flex flex-col w-screen text-white bg-[#36393F] h-full">
+    <MainScreenBar />
+    <div className="flex flex-row justify-between w-full h-full" >
+    <div className="flex flex-col w-full px-4">
+    <MainScreen/>
+    </div>
+    <div className="flex flex-col w-[417px] border-solid border-[#42454A] border-l-2  px-4">
+<MainScreenSideBar/>  
+</div>
+    </div>
 
     </div>
     </div>

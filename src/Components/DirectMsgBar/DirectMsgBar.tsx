@@ -5,9 +5,9 @@ import BunnyAvatar from "../../assets/navigation-icons/bunny_pic.svg";
 import OnlineImg from "../../assets/navigation-icons/online.svg";
 export const DirectMsgBar = () => {
   return (
-    <div className="flex flex-row w-[240px] h-screen bg-[#2F3136] justify-center rounded-tl-md">
+    <div className="flex flex-row w-[240px] bg-[#2F3136] justify-center rounded-tl-md">
       <div className="flex flex-col align-middle">
-        <div className="flex flex-row align-middle pt-[10px] pb-[12px] px-[10px] w-full">
+        <div className="flex flex-row align-middle pt-[10px] pb-[6px] px-[10px] w-full shadow-lg">
           <input
             type="text"
             placeholder="Find or start a conversation"
